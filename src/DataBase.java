@@ -67,6 +67,15 @@ public class DataBase {
     }
 
     public void calculateSimilarity(){
-        
+        try {
+            PreparedStatement stat= conn.prepareStatement("select MID from MEDIAITEMS");
+            ResultSet rs=stat.executeQuery();
+            System.out.println(rs.);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
